@@ -1,0 +1,63 @@
+{
+	"utilisateurs":[
+		{"prenom":"Jean","age":22,"sexe":"h"},
+		{"prenom":"David","age":38,"sexe":"h"},
+		{"prenom":"Anna","age":18,"sexe":"f"}
+	]
+}
+
+
+import {starter} from './controls.js';
+var start=document.querySelector('.start'),
+lap=document.querySelector('.lap'),
+stop=document.querySelector('.stop'),
+reset=document.querySelector('.reset'),
+chrono=document.querySelector('.chrono');
+var montre=document.querySelector('.montre');
+var startId;
+var min=0, sec=0;
+chrono.textContent='00:00';
+function format(a, b){
+    if(a<10){
+        a='0'+a;
+    }
+    if(b<10){
+        b='0'+b;
+    }
+    return a+':'+b;
+}
+/*function starter(){
+    if(sec!=59){
+        sec++;
+    }
+    else{
+        sec=0;
+        min++;
+    }
+    chrono.textContent=format(min, sec);
+}
+function laper(){
+    var div=document.createElement('div');
+    div.textContent=format(min, sec);
+    montre.appendChild(div);
+
+}
+function reset(){
+    clearInterval(startId);
+    sec=0;
+    min=0;
+    montre.textContent='';
+    chrono.textContent=format(min, sec);
+    montre.appendChild(chrono);
+    start.textContent='START';
+}*/
+start.onclick=function (){startId=setInterval(function (){ controls.starter(); }, 995);};
+stop.onclick=function (){
+    clearInterval(startId);
+    start.textContent='CONTINUE';
+};
+reset.onclick=function (){
+    controls.reset();
+}
+lap.onclick=function (){controls.laper();}
+

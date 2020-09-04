@@ -1,0 +1,73 @@
+body
+{
+    background-color: black;
+}
+.contenu
+{
+    background-color: black;
+}
+.descript
+{
+    background-color: rgb(20, 167, 220);
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+}
+h1
+{
+    font-size: 3.5em;
+    margin: 1%;
+}
+h2
+{
+    font-size: 3em;
+    margin: 1%;
+}
+h3
+{
+    font-size: 2.5em;
+    margin: 1%;
+}
+.nav
+{
+    text-align: center;
+}
+.bouton
+{
+    width: 20%;
+    margin-right: 5%;
+    padding: 5px;
+    background-color: rgb(255, 255, 255, 0.3);
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: white;
+    border: none;
+    border-radius: 3px;
+
+}
+.game
+{
+    text-align: center;
+}
+.div
+{
+    display: inline-block;
+    width: 20%;
+    height: 240px;
+    border: solid;
+    border-radius: 50%;
+    margin-right: 5%;
+    margin-top: 2%;
+    vertical-align: baseline;
+    text-align: center;
+}
+
+.verdict
+{
+    margin-top: 3%;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}

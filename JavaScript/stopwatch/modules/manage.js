@@ -33,7 +33,6 @@ reset.onclick=function (){
     controls.reset(time, chrono, montre, start, startId);
 }
 lap.onclick=function (){controls.laper(time, montre);}
-alert('ok');
 }
 
 export {format, config}

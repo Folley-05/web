@@ -1,4 +1,4 @@
-import Tache from  './Tache';
+import Tache from  '../modules/Tache.js';
 alert(Tache);
 
 var ht=document.getElementsByTagName('html');

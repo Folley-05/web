@@ -1,4 +1,4 @@
-import {config} from './manage.js';
+import {config} from '../modules/manage.js';
 config();
 
 /*import * as controls from './controls.js';

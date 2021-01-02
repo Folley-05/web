@@ -11,11 +11,13 @@ function check(){
     sugest.textContent='';
     if(text.value){
         for (var i=0; i<villes.length; i++){
-            if(reg.test(villes[i])){
+            if(reg.test(villes[i])){ // le test de la chaine de caractere s'effectue ici
+                //mettre le traitement a faire a partir d'ici
                 var sugestion=document.createElement('div');
                 sugestion.textContent=villes[i];
                 sug.push(sugestion);
                 sugest.appendChild(sugestion);
+                // fin du traitement
             }
         }
     }
